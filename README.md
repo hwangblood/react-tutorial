@@ -6,7 +6,7 @@ This React JS Full Course for Beginners is an all-in-one beginner tutorial and c
 
 ## Projects Table of Content
 
-### grocery_list
+### grocery_list (Chapter 1 -9, 11)
 
 ([0:00:48](https://www.youtube.com/watch?v=RVFAyFWO4go&t=48s)) Chapter 1: Start Here
 ([0:13:56](https://www.youtube.com/watch?v=RVFAyFWO4go&t=836s)) Chapter 2: App & JSX
@@ -17,6 +17,7 @@ This React JS Full Course for Beginners is an all-in-one beginner tutorial and c
 ([1:03:23](https://www.youtube.com/watch?v=RVFAyFWO4go&t=3803s)) Chapter 7: Lists & Keys
 ([1:35:50](https://www.youtube.com/watch?v=RVFAyFWO4go&t=5750s)) Chapter 8: Props & Prop Drilling
 ([2:01:19](https://www.youtube.com/watch?v=RVFAyFWO4go&t=7279s)) Chapter 9: Controlled Component Inputs
+([3:03:44](https://www.youtube.com/watch?v=RVFAyFWO4go&t=11024s)) Chapter 11: useEffect Hook
 
 ### project_challenge
 
