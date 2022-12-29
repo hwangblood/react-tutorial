@@ -6,7 +6,13 @@ This React JS Full Course for Beginners is an all-in-one beginner tutorial and c
 
 ## Projects Table of Content
 
-### grocery_list (Chapter 1 -9, 11)
+### grocery_list (Chapter 1 -9, 11,12)
+
+> Run a JSON Server with command:
+> 
+> ```shell
+> npx json-server --watch data\db.json --port 3500
+> ```
 
 ([0:00:48](https://www.youtube.com/watch?v=RVFAyFWO4go&t=48s)) Chapter 1: Start Here
 ([0:13:56](https://www.youtube.com/watch?v=RVFAyFWO4go&t=836s)) Chapter 2: App & JSX
@@ -18,6 +24,8 @@ This React JS Full Course for Beginners is an all-in-one beginner tutorial and c
 ([1:35:50](https://www.youtube.com/watch?v=RVFAyFWO4go&t=5750s)) Chapter 8: Props & Prop Drilling
 ([2:01:19](https://www.youtube.com/watch?v=RVFAyFWO4go&t=7279s)) Chapter 9: Controlled Component Inputs
 ([3:03:44](https://www.youtube.com/watch?v=RVFAyFWO4go&t=11024s)) Chapter 11: useEffect Hook
+([3:15:08](https://www.youtube.com/watch?v=RVFAyFWO4go&t=11708s)) Chapter 12: JSON Server
+...
 
 ### project_challenge
 
