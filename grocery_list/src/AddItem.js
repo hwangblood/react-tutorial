@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { FaPlus } from "react-icons/fa";
 
-const AddItem = ({ newItem, setNewItemTitle, handleSubmit }) => {
+const AddItem = ({ newItemTitle, setNewItemTitle, handleSubmit }) => {
   const inputRef = useRef();
 
   return (
@@ -15,7 +15,7 @@ const AddItem = ({ newItem, setNewItemTitle, handleSubmit }) => {
         id="title"
         placeholder="Title"
         required
-        value={newItem}
+        value={newItemTitle}
         onChange={(e) => setNewItemTitle(e.target.value)}
       />
 
