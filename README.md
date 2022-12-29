@@ -18,6 +18,10 @@ This React JS Full Course for Beginners is an all-in-one beginner tutorial and c
 ([1:35:50](https://www.youtube.com/watch?v=RVFAyFWO4go&t=5750s)) Chapter 8: Props & Prop Drilling
 ([2:01:19](https://www.youtube.com/watch?v=RVFAyFWO4go&t=7279s)) Chapter 9: Controlled Component Inputs
 
+### project_challenge
+
+([2:38:25](https://www.youtube.com/watch?v=RVFAyFWO4go&t=9505s)) Chapter 10: Project Challenge
+
 ### Other Project
 
 ...
