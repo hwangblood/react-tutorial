@@ -9,7 +9,7 @@ This React JS Full Course for Beginners is an all-in-one beginner tutorial and c
 ### grocery_list (Chapter 1-9, 11-14)
 
 > Run a JSON Server with command:
-> 
+>
 > ```shell
 > npx json-server --watch data\db.json --port 3500
 > ```
@@ -32,7 +32,11 @@ This React JS Full Course for Beginners is an all-in-one beginner tutorial and c
 
 ### project_challenge
 
-([2:38:25](https://www.youtube.com/watch?v=RVFAyFWO4go&t=9505s)) Chapter 10: Project Challenge
+([2:38:25](https://www.youtube.com/watch?v=RVFAyFWO4go&t=9505s)) Chapter 10: Project Challenge### Other Project
+
+### fetch_data_challenge
+
+([4:04:33](https://www.youtube.com/watch?v=RVFAyFWO4go&t=14673s)) Chapter 15: Fetch Data Challenge
 
 ### Other Project
 
