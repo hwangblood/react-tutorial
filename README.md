@@ -6,7 +6,7 @@ This React JS Full Course for Beginners is an all-in-one beginner tutorial and c
 
 ## Projects Table of Content
 
-### grocery_list (Chapter 1-9, 11-13)
+### grocery_list (Chapter 1-9, 11-14)
 
 > Run a JSON Server with command:
 > 
@@ -26,6 +26,7 @@ This React JS Full Course for Beginners is an all-in-one beginner tutorial and c
 ([3:03:44](https://www.youtube.com/watch?v=RVFAyFWO4go&t=11024s)) Chapter 11: useEffect Hook
 ([3:15:08](https://www.youtube.com/watch?v=RVFAyFWO4go&t=11708s)) Chapter 12: JSON Server
 ([3:21:23](https://www.youtube.com/watch?v=RVFAyFWO4go&t=12083s)) Chapter 13: Fetch API Data
+([3:44:37](https://www.youtube.com/watch?v=RVFAyFWO4go&t=13477s)) Chapter 14: CRUD Operations
 
 ...
 
