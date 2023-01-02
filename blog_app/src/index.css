@@ -127,7 +127,7 @@ body {
 }
 
 .Home,
-.NewPost,
+.PostEditor,
 .PostPage,
 .About,
 .Missing {
@@ -170,17 +170,17 @@ body {
   margin: 1rem 0;
 }
 
-.newPostForm {
+.postForm {
   display: flex;
   flex-direction: column;
 }
 
-.newPostForm label {
+.postForm label {
   margin-top: 1rem;
 }
 
-.newPostForm input[type="text"],
-.newPostForm textarea {
+.postForm input[type="text"],
+.postForm textarea {
   font-family: "Open Sans", sans-serif;
   width: 100%;
   min-height: 48px;
@@ -191,11 +191,11 @@ body {
   outline: none;
 }
 
-.newPostForm textarea {
+.postForm textarea {
   height: 100px;
 }
 
-.newPostForm button {
+.postForm button {
   margin-top: 1rem;
   height: 48px;
   min-width: 48px;
@@ -205,10 +205,9 @@ body {
   cursor: pointer;
 }
 
-.Missing h2,
-.PostPage h2,
 .Missing p,
-.PostPage p {
+.PostPage p,
+.PostEditor p {
   margin-bottom: 1rem;
 }
 
@@ -217,10 +216,18 @@ body {
   min-width: 48px;
   border-radius: 0.25rem;
   padding: 0.5rem;
+  margin-right: 0.5rem;
   font-size: 1rem;
-  background-color: red;
   color: #fff;
   cursor: pointer;
+}
+
+.deleteButton {
+  background-color: red;
+}
+
+.editButton {
+  background-color: #333;
 }
 
 .statusMsg {
@@ -264,7 +271,7 @@ body {
     margin-left: 0.5rem;
   }
 
-  .newPostForm textarea {
+  .postForm textarea {
     height: 300px;
   }
 }

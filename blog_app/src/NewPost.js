@@ -8,10 +8,10 @@ const NewPost = ({
   setPostBody,
 }) => {
   return (
-    <main className="NewPost">
+    <main className="PostEditor">
       <h2>NewPost</h2>
 
-      <form className="newPostForm" onSubmit={handleSubmit}>
+      <form className="postForm" onSubmit={handleSubmit}>
         <label htmlFor="title">Title:</label>
         <input
           type="text"
