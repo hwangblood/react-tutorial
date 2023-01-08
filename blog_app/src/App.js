@@ -18,6 +18,10 @@ import Missing from "./Missing";
 
 import api from "./api/posts";
 
+// Custom Hooks
+import useWindowSize from "./hooks/useWindowSize";
+import useAxiosFetch from "./hooks/useAxiosFetch";
+
 function App() {
   const [posts, setPosts] = useState([]);
   const [search, setSearch] = useState("");
@@ -32,32 +36,13 @@ function App() {
 
   const history = useHistory();
 
-  useEffect(() => {
-    const fetchPosts = async () => {
-      try {
-        const response = await api.get("/posts");
-        setPosts(response.data);
-      } catch (error) {
-        if (error.response) {
-          // The request was made and the server responded with a status code
-          // that falls out of the range of 2xx
-          console.log(error.response.data);
-          console.log(error.response.status);
-          console.log(error.response.headers);
-        } else if (error.request) {
-          // The request was made but no response was received
-          // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
-          // http.ClientRequest in node.js
-          console.log(`Error: ${error.request}`);
-        } else {
-          // Something happened in setting up the request that triggered an Error
-          console.log(`Error: ${error.message}`);
-        }
-        console.log(error.config);
-      }
-    };
-    fetchPosts();
-  }, []);
+  // use custom hooks
+  const { width } = useWindowSize();
+  const { data, fetchError, isLoading } = useAxiosFetch(
+    "http://localhost:3500/posts"
+  );
+
+  useEffect(() => setPosts(data), [data]);
 
   useEffect(() => {
     const filteredResults = posts.filter(
@@ -105,7 +90,7 @@ function App() {
 
   const handleDelete = async (id) => {
     try {
-      const response = await api.delete(`/posts/${id}`);
+      await api.delete(`/posts/${id}`);
       const postsList = posts.filter((post) => post.id !== id);
       setPosts(postsList);
       history.push("/");
@@ -115,11 +100,15 @@ function App() {
   };
   return (
     <div className="App">
-      <Header title="React JS Blog" />
+      <Header title="React JS Blog" width={width} />
       <Nav search={search} setSearch={setSearch} />
       <Switch>
         <Route exact path="/">
-          <Home posts={searchResults} />
+          <Home
+            posts={searchResults}
+            fetchError={fetchError}
+            isLoading={isLoading}
+          />
         </Route>
         <Route exact path="/post">
           <NewPost

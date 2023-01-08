@@ -36,7 +36,7 @@ This React JS Full Course for Beginners is an all-in-one beginner tutorial and c
 
 ([4:04:33](https://www.youtube.com/watch?v=RVFAyFWO4go&t=14673s)) Chapter 15: Fetch Data Challenge
 
-### blog_app (Chapter 16-19)
+### blog_app (Chapter 16-20)
 
 > Run a JSON Server with command:
 > 
@@ -48,8 +48,37 @@ This React JS Full Course for Beginners is an all-in-one beginner tutorial and c
 ([5:02:58](https://www.youtube.com/watch?v=RVFAyFWO4go&t=18178s)) Chapter 17: Router Hooks & Links
 ([5:51:28](https://www.youtube.com/watch?v=RVFAyFWO4go&t=21088s)) Chapter 18: Flexbox Components
 ([6:02:34](https://www.youtube.com/watch?v=RVFAyFWO4go&t=21754s)) Chapter 19: Axios API Requests
+([6:40:47](https://www.youtube.com/watch?v=RVFAyFWO4go&t=24047s)) Chapter 20: Custom Hooks
 ......
 
 ### Other Project
 
 ......
+
+### 🧰 Resources
+
+- 🔗 [ES7 React JS Snippets Extension for VS Code](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
+- 🔗 [React Dev Tools Extension for Chrome](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
+- 🔗 [JSON-Server](https://www.npmjs.com/package/json-server)
+- 🔗 [React Router](https://reactrouter.com/)
+- 🔗 [Axios](https://www.npmjs.com/package/axios)
+- 🔗 [Rules of Hooks](https://reactjs.org/docs/hooks-rules.html)
+- 🔗 [Collections of Hooks: Part One](https://nikgraf.github.io/react-hooks/)
+- 🔗 [Collections of Hooks: Part Two](https://www.npmjs.com/package/react-use)
+- 🔗 [Easy Peasy Redux](https://easy-peasy.vercel.app/)
+- 🔗 [Styled Components](https://styled-components.com/)
+
+---
+
+### 📺 Other Tutorials Referenced
+
+- 🔗 [Higher Order Functions](https://youtu.be/7BeT6lsudL4)
+- 🔗 [localStorage](https://youtu.be/zmFDvFwj6-8)
+
+---
+
+### 📚 References
+
+- 🔗 [ReactJS Official site and docs](https://reactjs.org/)
+- 🔗 [React Wikipedia](https://en.wikipedia.org/wiki/React_(JavaScript_library))
+- 🔗 [React Jobs](https://www.ziprecruiter.com/candidate/search?search=react&location=)
