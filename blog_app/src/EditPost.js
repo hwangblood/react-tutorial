@@ -1,15 +1,19 @@
-import { React, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { React, useContext, useEffect, useState } from "react";
+import { useHistory, useParams } from "react-router-dom";
+import { format } from "date-fns";
+
+import api from "./api/posts";
+import DataContext from "./context/DataContext";
 import PostNotFound from "./PostNotFound";
 
-const EditPost = ({
-  posts,
-  handleEdit,
-  editTitle,
-  setEditTitle,
-  editBody,
-  setEditBody,
-}) => {
+const EditPost = () => {
+  // To edit a post
+  const [editTitle, setEditTitle] = useState("");
+  const [editBody, setEditBody] = useState("");
+
+  const history = useHistory();
+  const { posts, setPosts } = useContext(DataContext);
+
   const { id } = useParams();
   const post = posts.find((post) => post.id.toString() === id);
   useEffect(() => {
@@ -17,8 +21,24 @@ const EditPost = ({
       setEditTitle(post.title);
       setEditBody(post.body);
     }
+    // FIXME React Hook useEffect has a missing dependency: 'post'. Either include it or remove the dependency array.
   }, [posts, setEditTitle, setEditBody]);
 
+  const handleEdit = async (id) => {
+    const datetime = format(new Date(), "MMMM dd, yyyy pp");
+    const updatedPost = { id, title: editTitle, datetime, body: editBody };
+    try {
+      const response = await api.put(`/posts/${id}`, updatedPost);
+      setPosts(
+        posts.map((post) => (post.id === id ? { ...response.data } : post))
+      );
+      setEditTitle("");
+      setEditBody("");
+      history.push("/");
+    } catch (error) {
+      console.log(`Error: ${error.message}`);
+    }
+  };
   return (
     <main className="PostEditor">
       {editTitle && (
