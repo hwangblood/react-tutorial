@@ -21,8 +21,7 @@ const EditPost = () => {
       setEditTitle(post.title);
       setEditBody(post.body);
     }
-    // FIXME React Hook useEffect has a missing dependency: 'post'. Either include it or remove the dependency array.
-  }, [posts, setEditTitle, setEditBody]);
+  }, [post, setEditTitle, setEditBody]);
 
   const handleEdit = async (id) => {
     const datetime = format(new Date(), "MMMM dd, yyyy pp");
