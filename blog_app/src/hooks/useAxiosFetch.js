@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-
 import axios from "axios";
 
 const useAxiosFetch = (dataUrl) => {
@@ -9,7 +8,6 @@ const useAxiosFetch = (dataUrl) => {
 
   useEffect(() => {
     let isMounted = true;
-
     const source = axios.CancelToken.source();
 
     const fetchData = async (url) => {
@@ -22,9 +20,9 @@ const useAxiosFetch = (dataUrl) => {
           setData(response.data);
           setFetchError(null);
         }
-      } catch (error) {
+      } catch (err) {
         if (isMounted) {
-          setFetchError(`Error: ${error.message}`);
+          setFetchError(err.message);
           setData([]);
         }
       } finally {
@@ -34,12 +32,12 @@ const useAxiosFetch = (dataUrl) => {
 
     fetchData(dataUrl);
 
-    const cleanup = () => {
+    const cleanUp = () => {
       isMounted = false;
       source.cancel();
     };
 
-    return cleanup;
+    return cleanUp;
   }, [dataUrl]);
 
   return { data, fetchError, isLoading };

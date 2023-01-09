@@ -48,7 +48,7 @@ This React JS Full Course for Beginners is an all-in-one beginner tutorial and c
 
 - ([4:04:33](https://www.youtube.com/watch?v=RVFAyFWO4go&t=14673s)) Chapter 15: Fetch Data Challenge
 
-### blog_app (Chapter 16-21)
+### blog_app (Chapter 16-23)
 
 > Run a JSON Server with command:
 > 
@@ -68,11 +68,9 @@ This React JS Full Course for Beginners is an all-in-one beginner tutorial and c
 
 - ([7:17:04](https://www.youtube.com/watch?v=RVFAyFWO4go&t=26224s)) Chapter 21: Context API & useContext Hook
 
+- ([7:56:10](https://www.youtube.com/watch?v=RVFAyFWO4go&t=28570s)) Chapter 22: Easy Peasy Redux
+
 - ......
-
-### Other Project
-
-......
 
 ### 🧰 Resources
 

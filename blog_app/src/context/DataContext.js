@@ -1,3 +1,7 @@
+/**
+ * this is deprecated, because we are in easy-peasy
+ */
+
 import { createContext, useState, useEffect } from "react";
 
 // Custom Hooks
@@ -14,7 +18,9 @@ export const DataProvider = ({ children }) => {
     "http://localhost:3500/posts"
   );
 
-  useEffect(() => setPosts(data), [data]);
+  useEffect(() => {
+    setPosts(data);
+  }, [data]);
 
   useEffect(() => {
     const filteredResults = posts.filter(
