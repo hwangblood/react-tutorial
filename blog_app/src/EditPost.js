@@ -1,24 +1,37 @@
 import { React, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useHistory, useParams } from "react-router-dom";
+import { format } from "date-fns";
+
+import { useStoreState, useStoreActions } from "easy-peasy";
+
 import PostNotFound from "./PostNotFound";
 
-const EditPost = ({
-  posts,
-  handleEdit,
-  editTitle,
-  setEditTitle,
-  editBody,
-  setEditBody,
-}) => {
+const EditPost = () => {
   const { id } = useParams();
-  const post = posts.find((post) => post.id.toString() === id);
+  const history = useHistory();
+  // To edit a post
+  const editTitle = useStoreState((state) => state.editTitle);
+  const editBody = useStoreState((state) => state.editBody);
+  const setEditTitle = useStoreActions((actions) => actions.setEditTitle);
+  const setEditBody = useStoreActions((actions) => actions.setEditBody);
+
+  const editPost = useStoreActions((actions) => actions.editPost);
+  const getPostById = useStoreState((state) => state.getPostById);
+
+  const post = getPostById(id);
   useEffect(() => {
     if (post) {
       setEditTitle(post.title);
       setEditBody(post.body);
     }
-  }, [posts, setEditTitle, setEditBody]);
+  }, [post, setEditTitle, setEditBody]);
 
+  const handleEdit = (id) => {
+    const datetime = format(new Date(), "MMMM dd, yyyy pp");
+    const updatedPost = { id, title: editTitle, datetime, body: editBody };
+    editPost(updatedPost);
+    history.push(`/post/${id}`);
+  };
   return (
     <main className="PostEditor">
       {editTitle && (
@@ -43,7 +56,7 @@ const EditPost = ({
               value={editBody}
               onChange={(e) => setEditBody(e.target.value)}
             />
-            <button type="submit" onClick={() => handleEdit(post.id)}>
+            <button type="button" onClick={() => handleEdit(post.id)}>
               Submit
             </button>
           </form>

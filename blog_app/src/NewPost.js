@@ -1,12 +1,31 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
+import { format } from "date-fns";
+import { useStoreState, useStoreActions } from "easy-peasy";
 
-const NewPost = ({
-  handleSubmit,
-  postTitle,
-  setPostTitle,
-  postBody,
-  setPostBody,
-}) => {
+const NewPost = () => {
+  const history = useHistory();
+
+  // To create a new post
+  const postTitle = useStoreState((state) => state.postTitle);
+  const postBody = useStoreState((state) => state.postBody);
+  const setPostTitle = useStoreActions((actions) => actions.setPostTitle);
+  const setPostBody = useStoreActions((actions) => actions.setPostBody);
+
+  const posts = useStoreState((state) => state.posts);
+  const savePost = useStoreActions((actions) => actions.savePost);
+
+  // Handle new post action
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const id = posts.length ? posts[posts.length - 1].id + 1 : 1;
+    const datetime = format(new Date(), "MMMM dd, yyyy pp");
+    const newPost = { id, title: postTitle, datetime, body: postBody };
+
+    savePost(newPost);
+    history.push("/");
+  };
+
   return (
     <main className="PostEditor">
       <h2>NewPost</h2>

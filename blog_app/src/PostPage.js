@@ -1,10 +1,22 @@
 import React from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useHistory, useParams } from "react-router-dom";
+import { useStoreState, useStoreActions } from "easy-peasy";
+
 import PostNotFound from "./PostNotFound";
 
-const PostPage = ({ posts, handleDelete }) => {
+const PostPage = () => {
   const { id } = useParams();
-  const post = posts.find((post) => post.id.toString() === id);
+  const history = useHistory();
+
+  const deletePost = useStoreActions((actions) => actions.deletePost);
+  const getPostById = useStoreState((state) => state.getPostById);
+
+  const post = getPostById(id);
+  const handleDelete = (id) => {
+    deletePost(id);
+    history.push("/");
+  };
+
   return (
     <main className="PostPage">
       <article className="post">
@@ -20,7 +32,7 @@ const PostPage = ({ posts, handleDelete }) => {
               className="deleteButton"
               onClick={() => handleDelete(post.id)}
             >
-              Delete Post
+              Delete
             </button>
           </>
         )}
