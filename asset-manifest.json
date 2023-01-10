@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-toturial/static/css/main.c8d4af89.css",
+    "main.js": "/react-toturial/static/js/main.1ef37372.js",
+    "index.html": "/react-toturial/index.html",
+    "main.c8d4af89.css.map": "/react-toturial/static/css/main.c8d4af89.css.map",
+    "main.1ef37372.js.map": "/react-toturial/static/js/main.1ef37372.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c8d4af89.css",
+    "static/js/main.1ef37372.js"
+  ]
+}
