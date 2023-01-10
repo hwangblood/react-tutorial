@@ -9,7 +9,7 @@ This React JS Full Course for Beginners is an all-in-one beginner tutorial and c
 ### grocery_list (Chapter 1-9, 11-14)
 
 > Run a JSON Server with command:
->
+> 
 > ```shell
 > cd grocery_list
 > npx json-server --watch data\db.json --port 3500
@@ -52,7 +52,7 @@ This React JS Full Course for Beginners is an all-in-one beginner tutorial and c
 ### blog_app (Chapter 16-22)
 
 > Run a JSON Server with command:
->
+> 
 > ```shell
 > cd blog_app
 > npx json-server --watch data\db.json --port 3500
@@ -72,11 +72,14 @@ This React JS Full Course for Beginners is an all-in-one beginner tutorial and c
 
 - ([7:56:10](https://www.youtube.com/watch?v=RVFAyFWO4go&t=28570s)) Chapter 22: Easy Peasy Redux
 
-### tic-tac-toe
+### tic-tac-toe (Chapter 23)
 
 > A React app deployed to GitHub Pages.
+> 
+> visit online app at https://hwangblood.github.io/react-tutorial
 
 - [Tutorial: Intro to React](https://reactjs.org/tutorial/tutorial.html)
+- ([8:33:39](https://www.youtube.com/watch?v=RVFAyFWO4go&t=30819s)) Chapter 23: Build & Deploy Your React Apps
 
 ### 🧰 Resources
 
