@@ -76,7 +76,7 @@ This React JS Full Course for Beginners is an all-in-one beginner tutorial and c
 
 > A React app deployed to GitHub Pages.
 > 
-> visit online app at https://hwangblood.github.io/react-tutorial
+> visit online app at https://heyblood.github.io/react-tutorial
 
 - [Tutorial: Intro to React](https://reactjs.org/tutorial/tutorial.html)
 - ([8:33:39](https://www.youtube.com/watch?v=RVFAyFWO4go&t=30819s)) Chapter 23: Build & Deploy Your React Apps
