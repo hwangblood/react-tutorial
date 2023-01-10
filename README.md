@@ -9,8 +9,9 @@ This React JS Full Course for Beginners is an all-in-one beginner tutorial and c
 ### grocery_list (Chapter 1-9, 11-14)
 
 > Run a JSON Server with command:
-> 
+>
 > ```shell
+> cd grocery_list
 > npx json-server --watch data\db.json --port 3500
 > ```
 
@@ -48,11 +49,12 @@ This React JS Full Course for Beginners is an all-in-one beginner tutorial and c
 
 - ([4:04:33](https://www.youtube.com/watch?v=RVFAyFWO4go&t=14673s)) Chapter 15: Fetch Data Challenge
 
-### blog_app (Chapter 16-23)
+### blog_app (Chapter 16-22)
 
 > Run a JSON Server with command:
-> 
+>
 > ```shell
+> cd blog_app
 > npx json-server --watch data\db.json --port 3500
 > ```
 
@@ -70,7 +72,11 @@ This React JS Full Course for Beginners is an all-in-one beginner tutorial and c
 
 - ([7:56:10](https://www.youtube.com/watch?v=RVFAyFWO4go&t=28570s)) Chapter 22: Easy Peasy Redux
 
-- ......
+### tic-tac-toe
+
+> A React app deployed to GitHub Pages.
+
+- [Tutorial: Intro to React](https://reactjs.org/tutorial/tutorial.html)
 
 ### 🧰 Resources
 
@@ -97,5 +103,5 @@ This React JS Full Course for Beginners is an all-in-one beginner tutorial and c
 ### 📚 References
 
 - 🔗 [ReactJS Official site and docs](https://reactjs.org/)
-- 🔗 [React Wikipedia](https://en.wikipedia.org/wiki/React_(JavaScript_library))
+- 🔗 [React Wikipedia](<https://en.wikipedia.org/wiki/React_(JavaScript_library)>)
 - 🔗 [React Jobs](https://www.ziprecruiter.com/candidate/search?search=react&location=)
