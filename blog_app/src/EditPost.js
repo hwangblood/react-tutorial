@@ -1,5 +1,5 @@
 import { React, useEffect } from "react";
-import { useHistory, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { format } from "date-fns";
 
 import { useStoreState, useStoreActions } from "easy-peasy";
@@ -8,7 +8,7 @@ import PostNotFound from "./PostNotFound";
 
 const EditPost = () => {
   const { id } = useParams();
-  const history = useHistory();
+  const navigate = useNavigate();
   // To edit a post
   const editTitle = useStoreState((state) => state.editTitle);
   const editBody = useStoreState((state) => state.editBody);
@@ -30,7 +30,7 @@ const EditPost = () => {
     const datetime = format(new Date(), "MMMM dd, yyyy pp");
     const updatedPost = { id, title: editTitle, datetime, body: editBody };
     editPost(updatedPost);
-    history.push(`/post/${id}`);
+    navigate(`/post/${id}`);
   };
   return (
     <main className="PostEditor">

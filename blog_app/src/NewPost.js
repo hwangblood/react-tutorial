@@ -1,10 +1,10 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { format } from "date-fns";
 import { useStoreState, useStoreActions } from "easy-peasy";
 
 const NewPost = () => {
-  const history = useHistory();
+  const navigate = useNavigate();
 
   // To create a new post
   const postTitle = useStoreState((state) => state.postTitle);
@@ -23,7 +23,7 @@ const NewPost = () => {
     const newPost = { id, title: postTitle, datetime, body: postBody };
 
     savePost(newPost);
-    history.push("/");
+    navigate("/");
   };
 
   return (
