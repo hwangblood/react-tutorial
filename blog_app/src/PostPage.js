@@ -1,12 +1,12 @@
 import React from "react";
-import { Link, useHistory, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { useStoreState, useStoreActions } from "easy-peasy";
 
 import PostNotFound from "./PostNotFound";
 
 const PostPage = () => {
   const { id } = useParams();
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const deletePost = useStoreActions((actions) => actions.deletePost);
   const getPostById = useStoreState((state) => state.getPostById);
@@ -14,7 +14,7 @@ const PostPage = () => {
   const post = getPostById(id);
   const handleDelete = (id) => {
     deletePost(id);
-    history.push("/");
+    navigate("/");
   };
 
   return (
