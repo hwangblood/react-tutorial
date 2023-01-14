@@ -49,7 +49,7 @@ This React JS Full Course for Beginners is an all-in-one beginner tutorial and c
 
 - ([4:04:33](https://www.youtube.com/watch?v=RVFAyFWO4go&t=14673s)) Chapter 15: Fetch Data Challenge
 
-### blog_app (Chapter 16-22)
+### blog_app (Chapter 16-22, React Router v6)
 
 > Run a JSON Server with command:
 > 
@@ -61,6 +61,8 @@ This React JS Full Course for Beginners is an all-in-one beginner tutorial and c
 - ([4:43:10](https://www.youtube.com/watch?v=RVFAyFWO4go&t=16990s)) Chapter 16: React Router (v5)
 
 - ([5:02:58](https://www.youtube.com/watch?v=RVFAyFWO4go&t=18178s)) Chapter 17: Router Hooks & Links
+
+- ([Chapter 16, 17 Part2](https://www.youtube.com/watch?v=XBRLVRjZ3CQ)) Upgrade React Router v5 to v6 in 20 Minutes
 
 - ([5:51:28](https://www.youtube.com/watch?v=RVFAyFWO4go&t=21088s)) Chapter 18: Flexbox Components
 
